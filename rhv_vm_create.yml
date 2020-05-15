@@ -16,7 +16,7 @@
   vars:
     datacenter: Default
     cluster: "{{ rhvm_cluster }}" 
-    template: "{{ rhvm_template }}" 
+    template: "{{ vm_template }}" 
     vm_memory: 4GiB
     vm_names: "{{ vm_name.split(',') }}"
   tasks:
