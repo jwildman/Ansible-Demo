@@ -14,9 +14,9 @@
       tags:
         - always
   vars:
-    datacenter: Gigahype
-    cluster: Gigahype
-    template: RHEL77_ShadowMan_V3
+    datacenter: Default
+    cluster: "{{ rhvm_cluster }}" 
+    template: "{{ rhvm_template }}" 
     vm_memory: 4GiB
     vm_names: "{{ vm_name.split(',') }}"
   tasks:
